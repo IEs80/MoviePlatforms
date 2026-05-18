@@ -80,11 +80,15 @@ class LetterScraper:
             time.sleep(0.5)
 
 
+    #   @fn:    print_movies_to_file
+    #   @brief: prints all the scraped movies to a file
+    #   @author: I.S.
+    #   @version: 1.0
+    def print_movies_to_file(self):
+        if self.movies == []:
+            print('nothing to print')
 
-
-#### **** Main **** ####
-print("Initializing")
-user = input("Enter your LB username")
-Scraper = LetterScraper(username='ValHalen')
-Scraper.getWatchList()
-Scraper.print_movies()
+        file_name = self.username + '_watchlist.txt'
+        with open(file_name, 'w') as wf:
+            for movie in self.movies:
+                wf.write(f"{movie}\n")

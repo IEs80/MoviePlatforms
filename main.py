@@ -2,11 +2,12 @@ from LetterScraper import LetterScraper
 from TMDBClient import TMDBClient
 import time
 import pandas as pd
+import sys
 
 # --- EJECUCIÓN PRINCIPAL ---
 if __name__ == "__main__":
     # 1. Configuración inicial
-    API_KEY = 'TU_CLAVE_API_AQUI' 
+
     REGION = 'AR'
 
 
@@ -14,21 +15,42 @@ if __name__ == "__main__":
     user = input("Enter your LB username... \n")
     OUT_FILE = f'Watchlist_{user}_Plataformas.csv'
     Scraper = LetterScraper(username=user)
-    tmdb = TMDBClient(API_KEY, REGION)
+    tmdb = TMDBClient(REGION)
+
 
     # 3. Extraemos las películas
-    movie_list = Scraper.getWatchList()
-    print(f"\n¡Éxito! Se encontraron {len(movie_list)} películas en tu Watchlist.\n")
+    use_file = input("Use watchlist file? Y/N \n")
+    while use_file != "Y" and use_file != "N":
+        use_file = input("Use watchlist file? Y/N \n")
+    
+    #4. if the user wants to use a file, we try to open it
+    if use_file == 'Y':
+        try:
+            file_name = Scraper.username + '_watchlist.txt'
+            print(file_name)
+            f = open(file_name,'r')
+            for x in f.readlines():
+                Scraper.movies.append(x)
+            f.close()
+        except OSError:
+            print("Couldn't open file. Searching the web...")
+            #Scraper.getWatchList()
+            sys.exit()
+    else:
+        Scraper.getWatchList()
 
-    if len(movie_list) > 0:
+    print(f"\n{len(Scraper.movies)} movies on your Watchlist!\n")
+
+    
+    if len(Scraper.movies) > 0:
         resultados = []
         print("Searching availability in AR platforms...")
 
-        # 4. Consultamos la API para cada película
-        for i, titulo in enumerate(movie_list, 1):
-            print(f"[{i}/{len(movie_list)}] Searching: {titulo}...")
+        # 5. Consultamos la API para cada película
+        for i, titulo in enumerate(Scraper.movies, 1):
+            print(f"[{i}/{len(Scraper.movies)}] Searching: {titulo}...")
             
-            plataformas = tmdb.buscar_plataformas(titulo)
+            plataformas = tmdb.search_platforms(titulo)
             
             resultados.append({
                 'Película': titulo,
@@ -36,7 +58,7 @@ if __name__ == "__main__":
             })
             time.sleep(0.2) # Respetamos el límite de peticiones de TMDB
 
-        # 5. Exportamos los datos
+        # 6. Exportamos los datos
         df = pd.DataFrame(resultados)
         df.to_csv(OUT_FILE, sep=';', index=False)
         print(f"\n¡Proceso terminado al 100%! Revisá el archivo: {OUT_FILE}")

@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import time
+import sys
 
 #   @class:     TMDBClient
 #   @brief:     class that interacts with the "Themoviedb" API
@@ -11,46 +12,78 @@ class TMDBClient:
     
     
     def __init__(self, api_key, region='AR'):
-        self.api_key = api_key
+        self.api_key = ""
         self.region = region
         self.base_url = "https://api.themoviedb.org/3"
-        
-    def _buscar_id_pelicula(self, titulo):
-        """Método interno para obtener el ID de la película."""
+        self.debug = 0
+
+    #   @class:     getApiKey
+    #   @brief:     method to read the API KEY in the API_KEY.txt
+    #   @author:    I.S.
+    #   @version:   1.0
+    def setApiKey(self,filename):
+        try:
+            f = open(filename)
+        except OSError:
+            print ("Could not open/read file:", filename)
+            sys.exit()
+
+        #if we can open the file, we read the API KEY
+        self.api_key = f.read()
+        #close the file
+        f.close()
+        if self.debug == 1:
+            print(self.api_key)
+
+    #   @class:     getApiKey
+    #   @brief:     Mehod to get a specific movie id from the database
+    #   @author:    I.S.
+    #   @version:   1.0       
+    def get_movie_id(self, title):
+        """Mehod to get a specific movie id from the database"""
         search_url = f"{self.base_url}/search/movie"
-        params = {
-            'api_key': self.api_key,
-            'query': titulo
+        search_url = search_url + f"?query={title}&include_adult=true&language=en-US&page=1"
+        if self.debug == 1:
+            print(search_url)
+  
+        headers = {
+            'accept': "application/json",
+            "Authorization": "Bearer "+f"{self.api_key}"
         }
-        response = requests.get(search_url, params=params).json()
+        response = requests.get(search_url, headers=headers).json()
         
         if response.get('results'):
+            if self.debug == 1:
+                print(response['results'][0]['id'])
             return response['results'][0]['id']
         return None
 
-    def buscar_plataformas(self, titulo):
-        """Devuelve un string con las plataformas disponibles o un mensaje de error."""
+    #   @class:     search_platforms
+    #   @brief:     Search the platforms in which a specific title is available
+    #   @author:    I.S.
+    #   @version:   1.0  
+    def search_platforms(self, title):
+        """Search the platforms in which a specific title is available."""
         try:
-            movie_id = self._buscar_id_pelicula(titulo)
+            movie_id = self.get_movie_id(title)
             
             if not movie_id:
-                return "No encontrada"
+                return "Movie not found"
                 
             providers_url = f"{self.base_url}/movie/{movie_id}/watch/providers"
             params = {'api_key': self.api_key}
             providers_response = requests.get(providers_url, params=params).json()
             
-            resultados_region = providers_response.get('results', {}).get(self.region, {})
-            plataformas = []
+            regional_results = providers_response.get('results', {}).get(self.region, {})
+            platforms = []
             
-            if 'flatrate' in resultados_region:
-                for proveedor in resultados_region['flatrate']:
-                    plataformas.append(proveedor['provider_name'])
+            if 'flatrate' in regional_results:
+                for proveedor in regional_results['flatrate']:
+                    platforms.append(proveedor['provider_name'])
                     
-            return ", ".join(plataformas) if plataformas else "No disponible en suscripción plana"
+            return ", ".join(platforms) if platforms else "Movie not available on platforms in this region"
                 
         except Exception:
-            return "Error en la búsqueda"
-
+            return "*Error searching platforms*"
 
 

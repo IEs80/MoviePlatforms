@@ -41,6 +41,7 @@ class TMDBClient:
     #   @version:   1.0       
     def get_movie_id(self, title):
         """Mehod to get a specific movie id from the database"""
+        
         search_url = f"{self.base_url}/search/movie"
         search_url = search_url + f"?query={title}&include_adult=true&language=en-US&page=1"
         if self.debug == 1:
@@ -50,13 +51,22 @@ class TMDBClient:
             'accept': "application/json",
             "Authorization": "Bearer "+f"{self.api_key}"
         }
+
         response = requests.get(search_url, headers=headers).json()
         
+        if self.debug >= 1:
+            print(response)
+            auth = "Bearer "+f"{self.api_key}"
+            print(f"api_key = {auth}")
+
+        if self.debug == 1:
+            print(f"movie_id = {response['results'][0]['id']}")
+
         if response.get('results'):
-            if self.debug == 1:
-                print(response['results'][0]['id'])
             return response['results'][0]['id']
-        return None
+        else:
+            print("ID not found!\n")
+            return None
 
     #   @class:     search_platforms
     #   @brief:     Search the platforms in which a specific title is available
@@ -64,26 +74,39 @@ class TMDBClient:
     #   @version:   1.0  
     def search_platforms(self, title):
         """Search the platforms in which a specific title is available."""
-        try:
-            movie_id = self.get_movie_id(title)
-            
-            if not movie_id:
-                return "Movie not found"
-                
-            providers_url = f"{self.base_url}/movie/{movie_id}/watch/providers"
-            params = {'api_key': self.api_key}
-            providers_response = requests.get(providers_url, params=params).json()
-            
-            regional_results = providers_response.get('results', {}).get(self.region, {})
-            platforms = []
-            
-            if 'flatrate' in regional_results:
-                for proveedor in regional_results['flatrate']:
-                    platforms.append(proveedor['provider_name'])
-                    
-            return ", ".join(platforms) if platforms else "Movie not available on platforms in this region"
-                
-        except Exception:
-            return "*Error searching platforms*"
+        
+        movie_id = self.get_movie_id(title)
+        
+        if self.debug == 1:
+            print(f"movie_id on search = {movie_id}")
 
+        if not movie_id:
+            if self.debug == 1:
+                print(f"No movie id found")
+            return "Movie not found"
+            
+        providers_url = f"https://api.themoviedb.org/3/movie/{movie_id}/watch/providers"
+
+        headers = {
+            "accept": "application/json",
+            "Authorization": "Bearer "+f"{self.api_key}"
+        }
+
+        providers_response = requests.get(providers_url, headers=headers).json()
+        
+        with open("providers_response.txt", 'w') as f:
+            f.write(str(providers_response))
+
+        if self.debug > 1:
+            print(providers_response)
+
+        regional_results = providers_response.get('results', {}).get(self.region, {})
+        platforms = []
+        
+        if 'flatrate' in regional_results:
+            for proveedor in regional_results['flatrate']:
+                platforms.append(proveedor['provider_name'])
+                
+        return ", ".join(platforms) if platforms else "Movie not available on platforms in this region"
+            
 

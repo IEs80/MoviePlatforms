@@ -4,33 +4,37 @@ import time
 import pandas as pd
 import sys
 
-# --- EJECUCIÓN PRINCIPAL ---
-if __name__ == "__main__":
-    # 1. Configuración inicial
 
+if __name__ == "__main__":
+
+    #set region
     REGION = 'AR'
 
-
-    # 2. Instanciamos nuestras clases
+    #set out Letterboxd user
     user = input("Enter your LB username... \n")
+    #set output file name
     OUT_FILE = f'Watchlist_{user}_Plataformas.csv'
+    #Initialize Scraper
     Scraper = LetterScraper(username=user)
+    #Initialize TMDB Client
     tmdb = TMDBClient(REGION)
+    #Set the API KEY
+    tmdb.setApiKey('API_KEY.txt')
 
 
-    # 3. Extraemos las películas
+    #Get watchlist
     use_file = input("Use watchlist file? Y/N \n")
     while use_file != "Y" and use_file != "N":
         use_file = input("Use watchlist file? Y/N \n")
     
-    #4. if the user wants to use a file, we try to open it
+    #if the user wants to use a file, we try to open it
     if use_file == 'Y':
         try:
             file_name = Scraper.username + '_watchlist.txt'
             print(file_name)
             f = open(file_name,'r')
             for x in f.readlines():
-                Scraper.movies.append(x)
+                Scraper.movies.append(x.rstrip("\n").replace(' ','-').lower())
             f.close()
         except OSError:
             print("Couldn't open file. Searching the web...")
@@ -38,6 +42,13 @@ if __name__ == "__main__":
             sys.exit()
     else:
         Scraper.getWatchList()
+        #store_in_file = input("Want to store watchlist in file? Y/N \n")
+        #while store_in_file != "Y" and use_file != "N":
+        #    use_file = input("Use watchlist file? Y/N \n")
+        #if store_in_file == "Y":
+        #    Scraper.print_movies_to_file()
+
+        
 
     print(f"\n{len(Scraper.movies)} movies on your Watchlist!\n")
 

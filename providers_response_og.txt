@@ -1,0 +1,635 @@
+{
+  "id": 49984,
+  "results": {
+    "AD": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=AD",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 29
+        }
+      ]
+    },
+    "AR": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=AR",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 9
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 45
+        }
+      ]
+    },
+    "AT": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=AT",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 143
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 144
+        }
+      ]
+    },
+    "BE": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=BE",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 49
+        }
+      ]
+    },
+    "BM": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=BM",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 30
+        }
+      ]
+    },
+    "BO": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=BO",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 35
+        }
+      ]
+    },
+    "BR": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=BR",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 11
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 61
+        }
+      ]
+    },
+    "BS": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=BS",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 29
+        }
+      ]
+    },
+    "BZ": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=BZ",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 14
+        }
+      ]
+    },
+    "CA": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=CA",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 34
+        }
+      ]
+    },
+    "CH": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=CH",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 68
+        }
+      ]
+    },
+    "CL": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=CL",
+      "flatrate": [
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 39
+        },
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 52
+        }
+      ]
+    },
+    "CO": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=CO",
+      "flatrate": [
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 40
+        },
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 53
+        }
+      ]
+    },
+    "CR": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=CR",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 35
+        }
+      ]
+    },
+    "DE": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=DE",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 24
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 31
+        }
+      ]
+    },
+    "EC": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=EC",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 35
+        }
+      ]
+    },
+    "ES": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=ES",
+      "flatrate": [
+        {
+          "logo_path": "/kO2SWXvDCHAquaUuTJBuZkTBAuU.jpg",
+          "provider_id": 63,
+          "provider_name": "Filmin",
+          "display_priority": 7
+        },
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 17
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 36
+        }
+      ]
+    },
+    "FR": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=FR",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 18
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 42
+        }
+      ]
+    },
+    "GB": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=GB",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 15
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 36
+        }
+      ]
+    },
+    "GF": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=GF",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 29
+        }
+      ]
+    },
+    "GG": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=GG",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 56
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 57
+        }
+      ]
+    },
+    "GI": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=GI",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 30
+        }
+      ]
+    },
+    "GT": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=GT",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 35
+        }
+      ]
+    },
+    "GY": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=GY",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 8
+        }
+      ]
+    },
+    "HN": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=HN",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 35
+        }
+      ]
+    },
+    "IE": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=IE",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 55
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 56
+        }
+      ]
+    },
+    "IN": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=IN",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 8
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 60
+        }
+      ]
+    },
+    "IT": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=IT",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 12
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 47
+        }
+      ]
+    },
+    "LI": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=LI",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 35
+        }
+      ]
+    },
+    "LU": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=LU",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 19
+        }
+      ]
+    },
+    "MC": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=MC",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 29
+        }
+      ]
+    },
+    "MT": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=MT",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 28
+        }
+      ]
+    },
+    "MX": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=MX",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 12
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 57
+        }
+      ]
+    },
+    "NI": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=NI",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 18
+        }
+      ]
+    },
+    "NL": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=NL",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 60
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 62
+        }
+      ]
+    },
+    "PA": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=PA",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 35
+        }
+      ]
+    },
+    "PE": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=PE",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 37
+        }
+      ]
+    },
+    "PF": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=PF",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 14
+        }
+      ]
+    },
+    "PK": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=PK",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 11
+        }
+      ]
+    },
+    "PY": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=PY",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 34
+        }
+      ]
+    },
+    "SM": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=SM",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 30
+        }
+      ]
+    },
+    "SV": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=SV",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 35
+        }
+      ]
+    },
+    "TC": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=TC",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 15
+        }
+      ]
+    },
+    "TR": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=TR",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 7
+        }
+      ]
+    },
+    "US": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=US",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 59
+        },
+        {
+          "logo_path": "/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg",
+          "provider_id": 201,
+          "provider_name": "MUBI Amazon Channel",
+          "display_priority": 88
+        }
+      ]
+    },
+    "UY": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=UY",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 35
+        }
+      ]
+    },
+    "VA": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=VA",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 10
+        }
+      ]
+    },
+    "VE": {
+      "link": "https://www.themoviedb.org/movie/49984-silvia-prieto/watch?locale=VE",
+      "flatrate": [
+        {
+          "logo_path": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg",
+          "provider_id": 11,
+          "provider_name": "MUBI",
+          "display_priority": 32
+        }
+      ]
+    }
+  }
+}
